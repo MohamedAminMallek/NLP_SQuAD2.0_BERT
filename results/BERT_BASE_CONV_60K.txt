@@ -1,0 +1,20 @@
+{
+  "exact": 52.65728964878295,
+  "f1": 54.83526594484986,
+  "total": 11873,
+  "HasAns_exact": 41.44736842105263,
+  "HasAns_f1": 45.8095668966264,
+  "HasAns_total": 5928,
+  "NoAns_exact": 63.83515559293524,
+  "NoAns_f1": 63.83515559293524,
+  "NoAns_total": 5945,
+  "best_exact": 56.01785563884444,
+  "best_exact_thresh": -1.7039756774902344,
+  "best_f1": 57.051960746767,
+  "best_f1_thresh": -1.4186553955078125
+}
+
+
+params : 
+  --train_batch_size=64 \
+  --max_seq_length=69 
