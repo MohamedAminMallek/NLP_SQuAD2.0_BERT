@@ -48,15 +48,15 @@ We then train a large model (12-layer to 24-layer Transformer) on a large corpus
 - Convert these previous samples to features in order to use them by BERT
 
    
-1- Concatenate the question with the response passage
+***Concatenate the question with the response passage***
  ```
 [CLS] after her second solo album , what other entertainment venture did beyonce explore ? [SEP] ( 2008 ) influenced her third album , i am . . . sasha fierce ( 2008 ) , which saw the birth of her alter - ego sasha fierce and earned a record - setting six grammy awards in 2010 , including song of the year for " single ladies ( [SEP]
  ```
-2- Tokenize data
+***Tokenize data***
 ```
 101 2044 2014 2117 3948 2201 1010 2054 2060 4024 6957 2106 20773 8849 1029 102 1006 2263 1007 5105 2014 2353 2201 1010 1045 2572 1012 1012 1012 14673 9205 1006 2263 1007 1010 2029 2387 1996 4182 1997 2014 11477 1011 13059 14673 9205 1998 3687 1037 2501 1011 4292 2416 8922 2982 1999 2230 1010 2164 2299 1997 1996 2095 2005 1000 2309 6456 1006 102
 ```
-3-Mask the response passage in order to transform the SQUAD problem to IsNextSentence?
+***Mask the response passage in order to transform the SQUAD problem to IsNextSentence?***
 
 *Reminder: BERT is trained to solve IsNextSentence problem.*
 ```
