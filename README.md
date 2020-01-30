@@ -5,7 +5,7 @@ Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, 
 
 SQuAD2.0 combines the 100,000 questions in SQuAD1.1 with over 50,000 unanswerable questions written adversarially by crowdworkers to look similar to answerable ones. To do well on SQuAD2.0, systems must not only answer questions when possible, but also determine when no answer is supported by the paragraph and abstain from answering.
 
-***Source : https://rajpurkar.github.io/SQuAD-explorer/***
+*Source : https://rajpurkar.github.io/SQuAD-explorer/*
 
 ## What is BERT ?
 
@@ -31,4 +31,12 @@ Label: NotNextSentence
 ```
 We then train a large model (12-layer to 24-layer Transformer) on a large corpus (Wikipedia + BookCorpus) for a long time (1M update steps), and that's BERT.
 
-***Source : https://github.com/google-research/bert***
+*Source : https://github.com/google-research/bert*
+
+## Our Work
+
+In order to solve the SQUAD V2 problem we decide to **fine tune the pre-trained base_bert** previously described and the main reason behind this choice is that we don’t have either time or resources to train such model. That’s why we also decide to work only with **45% of the dataset**.
+
+#### These are the different models we implement on the top of the Bert model.
+
+<img  src="https://raw.githubusercontent.com/MohamedAminMallek/NLP_SQuAD2.0_BERT/master/readme_image/results.png"/>
